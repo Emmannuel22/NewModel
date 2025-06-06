@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+    background-color: #fcfcfc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23b2b0b5' fill-opacity='0.19'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+a{
+ color: black;
+ text-decoration: none;   
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/*Estilos de Navegacion*/
+
+.nav-principal{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-marca{
+    width: 60px;
+}
+
+/*navegacion izquierda*/
+
+.nav-principal ul{
+    display: flex;
+}
+
+.nav-principal ul li{
+    padding: 10px;
+}
+
+.nav-principal ul li a:hover{
+    border-bottom: black solid 2px;
+}
+
+.nav-principal ul.nav_menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    color: black;
+    top: 20px;
+    right: 30px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color:  black;
+    margin: 10px;
+}
+
+/*Baner principal*/
+
+.baner-principal{
+    width: 100%;
+    height: 500px;
+    background: url('../img/baerprin-senda-op.png') no-repeat center center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    opacity: .5;
+}
+
+.baner-principal h2{
+    margin-bottom: 5px;
+    color: white;
+}
+
+.baner-principal p{
+    margin-bottom: 5px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+/*noticias cartas*/
+
+.noticias-cartas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.noticias-cartas img{
+    width: 100%;
+    height: 180px;
+}
+
+.noticias-cartas h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.noticias-cartas a{
+    padding: 10px 0;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.noticias-cartas a:hover{
+    text-decoration: underline;
+}
+
+/*Baner dos*/
+
+.segundo-baner{
+    width: 100%;
+    height: 350px;
+    background: url("../img/segundo-baner.png") no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+.segundo-baner .container{
+    width: 100%;
+    padding: 90px 0 0 80px;
+    color: white;
+}
+
+.segundo-baner p,
+.segundo-baner h2{
+    margin: 10px 0 10px 0;
+}
+
+/*Tercer baner*/
+
+.tercer-baner{
+    width: 100%;
+    height: 350px;
+    background: url("../img/baner-tercero.png") no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+.tercer-baner .container{
+    width: 90%;
+    padding: 120px 0 0 10px;
+    color: white;
+}
+
+.tercer-baner p,
+.tercer-baner h2{
+    margin: 10px 0 10px 0;
+}
+
+/*redes sociales*/
+
+.social{
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a i{
+    margin: 10px 0;
+    font-size: 3rem;
+}
+
+/*Footer Links*/
+
+.footer-links{
+    background-color: #8d8f8f;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-links ul{
+    margin: auto;
+}
+
+.footer-links ul li{
+    line-height: 2.5;
+    text-align: center;
+}
+
+/*Footer*/
+
+.footer{
+    color: #bfbfbf ;
+    background-color:#8d8f8f ;
+    text-align: end;
+    font-size: 12px;
+    padding: 20px 0 0 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+/*Mediciones de Tamanio*/
+
+@media (max-width: 700px){
+    
+    .nav-principal ul.nav_menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #9b9b9b;
+        padding: 70px;
+        height: 100%;
+        opacity: .9;
+        transform: translateX(-400px);
+    }
+
+    /*Alterar traslate*/
+
+    .nav-principal ul.nav_menu.show {
+        transform: translateX(-20px)
+    }
+
+    .nav-principal ul.nav_menu li{
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .nav-principal ul.nav-menu-lupa{
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+    .noticias-cartas{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .segundo-baner .container{
+        padding: 90px 0 0 40px;
+    }
+
+    .tercer-baner .container{
+        padding: 70px 0 0 10px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .menu-btn{
+        display: block;
+    }
+}
